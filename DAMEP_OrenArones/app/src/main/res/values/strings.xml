@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DAMEP_OrenArones</string>
+    <string name="Titulo_1">Censo DAM 2023</string>
+    <string name="Pregunta_nombre">Apellidos y Nombre</string>
+    <string name="Pregunta_correo">Correo Electronico</string>
+    <string name="Pregunta_clave">Clave</string>
+    <string name="Pregunta_telefono">Telefono de contacto</string>
+    <string name="Pregunta_fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="Pregunta_hora_de_nacimiento">Hora de Nacimiento</string>
+    <string name="Pregunta_zona_de_residencia">Zona de Residencia</string>
+    <string name="Residencia_urbano">Urbano</string>
+    <string name="Residencia_rural">Rural</string>
+    <string name="Pregunta_numero_personas">¿Cuántas personas viven en la vivienda?</string>
+    <string name="Pregunta_ingreso_promedio">Ingreso Promedio de la Familia</string>
+    <string name="Opinion_bonos">¿Que opina sobre los bonos otorgados por el gobierno?</string>
+    <string name="Pregunta_mascotas">Mascotas que viven en casa</string>
+    <string name="Mascota_gato">Gato</string>
+    <string name="Mascota_perro">Perro</string>
+    <string name="Mascota_pollo">Pollo</string>
+    <string name="Mascota_pato">Pato</string>
+    <string name="Mascota_otro">Otro</string>
+    <string name="Boton_enviar">Enviar</string>
+</resources>

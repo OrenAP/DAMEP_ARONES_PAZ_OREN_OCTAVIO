@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/thumbnail"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="215dp"
+        android:background="#7ED1F3EC"
+        android:text="@string/Titulo_1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_nombre"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_1" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#7ED1F3EC"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/nombre"
+        app:layout_constraintStart_toEndOf="@+id/nombre"
+        app:layout_constraintTop_toTopOf="@+id/nombre" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#7ED1F3EC"
+        android:text="@string/Pregunta_correo"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/nombre"
+        app:layout_constraintStart_toStartOf="@+id/nombre"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3E0038FF"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/correo"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="@+id/correo" />
+
+    <TextView
+        android:id="@+id/clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_clave"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/correo"
+        app:layout_constraintStart_toStartOf="@+id/correo"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7ED1F3EC"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/clave"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/clave" />
+
+    <TextView
+        android:id="@+id/telefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#7ED1F3EC"
+        android:text="@string/Pregunta_telefono"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/clave"
+        app:layout_constraintStart_toStartOf="@+id/clave"
+        app:layout_constraintTop_toBottomOf="@+id/clave" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3E0038FF"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/telefono"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toTopOf="@+id/telefono" />
+
+    <TextView
+        android:id="@+id/fecha_de_nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_fecha_de_nacimiento"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/telefono"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/telefono"
+        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7ED1F3EC"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/fecha_de_nacimiento"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="@+id/fecha_de_nacimiento" />
+
+    <TextView
+        android:id="@+id/hora_de_nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#7ED1F3EC"
+        android:text="@string/Pregunta_hora_de_nacimiento"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/fecha_de_nacimiento"
+        app:layout_constraintStart_toStartOf="@+id/fecha_de_nacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_de_nacimiento" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3E0038FF"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/hora_de_nacimiento"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/hora_de_nacimiento" />
+
+    <TextView
+        android:id="@+id/zona_de_residencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_zona_de_residencia"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/hora_de_nacimiento"
+        app:layout_constraintStart_toStartOf="@+id/hora_de_nacimiento"
+        app:layout_constraintTop_toBottomOf="@+id/hora_de_nacimiento" />
+
+    <RadioGroup
+        android:id="@+id/group_residencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/zona_de_residencia"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTime"
+        app:layout_constraintStart_toStartOf="@+id/editTextTime"
+        app:layout_constraintTop_toTopOf="@+id/zona_de_residencia">
+
+        <RadioButton
+            android:id="@+id/residencia_urbano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3E0038FF"
+            android:text="@string/Residencia_urbano" />
+
+        <RadioButton
+            android:id="@+id/residencia_rural"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3E0038FF"
+            android:text="@string/Residencia_rural" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/numero_personas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_numero_personas"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/zona_de_residencia"
+        app:layout_constraintTop_toBottomOf="@+id/zona_de_residencia" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:background="#3E0038FF"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/numero_personas"
+        app:layout_constraintStart_toEndOf="@+id/numero_personas"
+        app:layout_constraintTop_toTopOf="@+id/numero_personas" />
+
+    <TextView
+        android:id="@+id/ingreso_promedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_ingreso_promedio"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/numero_personas"
+        app:layout_constraintTop_toBottomOf="@+id/numero_personas" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="#3E0038FF"
+        android:backgroundTint="#03A9F4"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/ingreso_promedio"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumberSigned"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumberSigned"
+        app:layout_constraintTop_toTopOf="@+id/ingreso_promedio" />
+
+    <TextView
+        android:id="@+id/opinion_bonos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#3E0038FF"
+        android:text="@string/Opinion_bonos"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/ingreso_promedio"
+        app:layout_constraintTop_toBottomOf="@+id/ingreso_promedio" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#3E0038FF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/opinion_bonos"
+        app:layout_constraintTop_toBottomOf="@+id/opinion_bonos" />
+
+    <TextView
+        android:id="@+id/mascotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#3E0038FF"
+        android:text="@string/Pregunta_mascotas"
+        android:textColor="#131111"
+        app:layout_constraintStart_toStartOf="@+id/opinion_bonos"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <CheckBox
+        android:id="@+id/mascota_gato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/Mascota_gato"
+        app:layout_constraintStart_toStartOf="@+id/mascotas"
+        app:layout_constraintTop_toBottomOf="@+id/mascotas" />
+
+    <CheckBox
+        android:id="@+id/mascota_perro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/Mascota_perro"
+        app:layout_constraintBottom_toBottomOf="@+id/mascota_gato"
+        app:layout_constraintStart_toEndOf="@+id/mascota_gato"
+        app:layout_constraintTop_toTopOf="@+id/mascota_gato" />
+
+    <CheckBox
+        android:id="@+id/mascota_pollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/Mascota_pollo"
+        app:layout_constraintBottom_toBottomOf="@+id/mascota_perro"
+        app:layout_constraintStart_toEndOf="@+id/mascota_perro"
+        app:layout_constraintTop_toTopOf="@+id/mascota_perro" />
+
+    <CheckBox
+        android:id="@+id/mascota_pato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/Mascota_pato"
+        app:layout_constraintBottom_toBottomOf="@+id/mascota_pollo"
+        app:layout_constraintStart_toEndOf="@+id/mascota_pollo"
+        app:layout_constraintTop_toTopOf="@+id/mascota_pollo" />
+
+    <CheckBox
+        android:id="@+id/mascota_otro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/Mascota_otro"
+        app:layout_constraintBottom_toBottomOf="@+id/mascota_pato"
+        app:layout_constraintStart_toEndOf="@+id/mascota_pato"
+        app:layout_constraintTop_toTopOf="@+id/mascota_pato" />
+
+    <Button
+        android:id="@+id/boton_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/Boton_enviar"
+        app:iconTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo_1"
+        app:layout_constraintStart_toEndOf="@+id/titulo_1"
+        app:layout_constraintTop_toTopOf="@+id/titulo_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
